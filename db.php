@@ -1,20 +1,15 @@
 <?php
+// Exemplo de conexão com o banco de dados MySQL
+$host = 'localhost'; // ou o seu host
+$user = 'root';      // seu usuário de banco de dados
+$password = '123456789WendelMG';      // sua senha de banco de dados
+$dbname = 'bd_negocios'; // o nome do banco de dados
 
+// Cria a conexão
+$conn = mysqli_connect($host, $user, $password, $dbname);
 
-
-//Local
-
-$servidor = "localhost";
-$usuario = "root";
-$senha ="";
-$db="teste";
-
-
-$conexao = mysqli_connect($servidor, $usuario, $senha, $db);
-
-$query="select * from cadastros order by nome";
-$consultaCadastros= mysqli_query($conexao, $query);
-
-$query="select * from faixas";
-$consultaFaixas= mysqli_query($conexao, $query);
-
+// Verifica se a conexão foi bem-sucedida
+if (!$conn) {
+    die("Falha na conexão: " . mysqli_connect_error());
+}
+?>

@@ -29,38 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cadastros` (
   `id` int(11) NOT NULL,
-  `nome` varchar(256) NOT NULL,
-  `obs` varchar(512) DEFAULT NULL,
-  `faixa1qnt` int(11) DEFAULT 0,
-  `faixa1total` double(10,2) DEFAULT 0.00,
-  `faixa2qnt` int(11) DEFAULT 0,
-  `faixa2total` double(10,2) DEFAULT 0.00,
-  `faixa3qnt` int(11) DEFAULT 0,
-  `faixa3total` double(10,2) DEFAULT 0.00,
-  `faixa4qnt` int(11) DEFAULT 0,
-  `faixa4total` double(10,2) DEFAULT 0.00
+  `proposta` varchar(256) NOT NULL,
+  `cliente` varchar(256) NOT NULL,
+  `valor` decimal(10,2) NOT NULL,
+  `status` varchar(50) NOT NULL,
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `faixas`
---
-
-CREATE TABLE `faixas` (
-  `id` int(11) NOT NULL,
-  `faixa1` double(10,2) DEFAULT 0.00,
-  `faixa2` double(10,2) DEFAULT 0.00,
-  `faixa3` double(10,2) DEFAULT 0.00,
-  `faixa4` double(10,2) DEFAULT 0.00
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `faixas`
---
-
-INSERT INTO `faixas` (`id`, `faixa1`, `faixa2`, `faixa3`, `faixa4`) VALUES
-(1, 50.00, 25.00, 16.66, 12.50);
 
 -- --------------------------------------------------------
 
@@ -93,10 +67,6 @@ ALTER TABLE `cadastros`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `faixas`
---
-ALTER TABLE `faixas`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `usuarios`
@@ -115,10 +85,8 @@ ALTER TABLE `cadastros`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT de tabela `faixas`
 --
-ALTER TABLE `faixas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
