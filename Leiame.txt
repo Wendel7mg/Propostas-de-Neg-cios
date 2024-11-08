@@ -1,0 +1,11 @@
+####DEPENDÊNCIAS##### 
+Bootstrap
+Bootstrap icons
+md5
+
+
+criar o banco 'teste' e importar o arquivo da pasta .db
+
+user: admin
+pass: admin
+
