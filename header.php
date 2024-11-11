@@ -17,7 +17,7 @@
     <!--Datatables-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
     
-    <title>Contador</title>
+     <title>Contador</title>
 </head>
 
 <body>
@@ -27,12 +27,13 @@
             <div class="collapse" id="navbarToggleExternalContent">
                 
                 <div class="bg-dark p-4">
-                    <h5 class="text-white h4">RegistraPro <span class="text-muted">SaaS</span></h5>
+                    <h5 class="text-white h4">InovaPropostas <span class="text-muted">SaaS</span></h5>
                     <div>
                         <a href="?pagina=cadastros" class="linkMenu">
-                            Cadastros
+                            Cadastrar Proposta
                         </a>
                     </div>
+                    <div>
                         <a href="logout.php" class="linkMenu">
                             Sair
                         </a>

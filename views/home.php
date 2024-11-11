@@ -1,7 +1,7 @@
 <div class="caixa">
     <!--Login-->
     <form method="post" action="login.php">
-        <h3>Contador</h3>
+        <h3>Gerenciador de Propostas</h3>
         <div class="form-group">
             <label for="exampleInputEmail1">Login</label>
             <input type="text" class="form-control" name="usu_login" placeholder="Digite seu login">

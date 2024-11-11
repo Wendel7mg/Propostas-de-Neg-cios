@@ -4,7 +4,7 @@ include 'db.php';
 
 $id = $_POST['id'];
 
-$query = "delete from cadastros where id = $id";
+$query = "delete from negocios where id = $id";
 
 mysqli_query($conexao, $query);
 
