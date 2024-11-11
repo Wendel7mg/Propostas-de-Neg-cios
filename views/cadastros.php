@@ -24,9 +24,9 @@
 
                     // Verifica o status e exibe corretamente
                     $status = '';
-                    if ($linha['status_disponibilidade'] == 'disponível') {
+                    if ($linha['status_disponibilidade'] == 'Aprovado') {
                         $status = 'Aprovado';
-                    } elseif ($linha['status_disponibilidade'] == 'indisponível') {
+                    } elseif ($linha['status_disponibilidade'] == 'Reprovado') {
                         $status = 'Reprovado';
                     } else {
                         $status = 'Pendente';
