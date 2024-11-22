@@ -2,13 +2,13 @@
 
 include 'db.php';
 
-$titulo = $_POST['titulo'];
-$autor = $_POST['autor'];
-$genero = $_POST['genero'];
+$proposta = $_POST['proposta'];
+$cliente = $_POST['cliente'];
+$valor = $_POST['valor'];
 $status_disponibilidade = $_POST['status_disponibilidade'];
 
 $query = "INSERT INTO negocios (proposta, cliente, valor, status_disponibilidade) 
-VALUES ('$titulo', '$autor', '$genero', '$status_disponibilidade')";
+VALUES ('$proposta', '$cliente', '$valor', '$status_disponibilidade')";
 
 mysqli_query($conexao, $query);
 

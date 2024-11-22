@@ -40,14 +40,31 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </nav>
+            <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
             ';
         }
         ?>
     </header>
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <!-- Example of a card component to display some content -->
+                <div class="card shadow-lg mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="m-0">Bem-vindo ao Sistema de Propostas</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Aqui você pode cadastrar novas propostas, visualizar registros e muito mais!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>

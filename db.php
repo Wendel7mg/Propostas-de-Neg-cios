@@ -3,7 +3,7 @@
 // Configurações de conexão com o banco de dados
 $servidor = "localhost";
 $usuario = "root";
-$senha = "123456789WendelMG";
+$senha = "";
 $db = "negociosbd";
 
 // Estabelecendo a conexão
